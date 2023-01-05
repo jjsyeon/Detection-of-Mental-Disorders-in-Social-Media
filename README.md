@@ -50,9 +50,16 @@
     - 텍스트 내의 Emotion Category 별 Intensity 측정
     - 코로나 19 데이터셋 기준으로 정신질환 비정신질환이 반대의 특성을 보인 Frear, Trust
     
-    <p align="center"><img width="493" alt="무제 2" src="https://user-images.githubusercontent.com/65614582/174300202-32db4a4b-7298-4a23-9606-07a2734695a2.png"><br>
+    <p align="center"><img width="493" alt="무제 2" src="https://user-images.githubusercontent.com/65614582/174300202-32db4a4b-7298-4a23-9606-07a2734695a2.png">
 
+      
 ## Trend Analysis <br>
+> 정신질환에 대한 코로나19 영향 분석. 다음과 같이 기간을 나누어 분석.<br>
+> 1. pre - pandemic (2018.3~2019.12)
+> 2. mid - pandemic (2020.1~2021.7)
+> 3. post - pandemic (2021.8~2022.3)
+<br>
+
 * 게시글 수 분석 시기 별 비교 <br>
     - 코로나19 게시글 수 비율이 증가하는 추세임
     - 코로나 관련 게시글 수는 r/covid뿐만 아니라 r/mental에서도 크게 증가
@@ -69,5 +76,35 @@
 
 ## Mental Disorder Detection Model<br>
 
+1. 모델의 종류
+    - 점수 학습 모델
+        * SVM
+        * 감정 단어 개수, 감정 점수 (Low Valence/Arousal Score, Fear/Trust Intensity Score), 토픽 점수 학습
+          
+    - 문장 학습 모델
+        * Bi-LSTM 모델
+        * 게시글 문장 데이터 학습
+    
+    - 점수 및 문장 학습 모델 
+        * 점수 학습 모델(3-Dense Layer)와 문장 학습 모델(Bi-LSTM) 병합한 모델
+        * 게시글 문장 데이터, 점수 데이터(감정 단어 개수, 감정 점수 :Low Valence/Arousal Score & Fear/Trust Intensity Score, 토픽 점수) 학습
+    
+   <p align="center"><img width="500" alt="image" src="https://user-images.githubusercontent.com/65614582/210784347-e81a4b06-81f4-44e0-a604-15d7c50abdb2.png">
+     
+2. 성능 평가
+     - Binary Classification Model
+          * 일반 데이터셋에서 특정 하나의 정신질환 subreddit을 ‘mental’ class로 분류
+          * 8개의 정신 질환 subreddit 각각에 대한 분류 모델
+     
+     - Multi-class Classification Model
+          * 8가지의 정신질환 게시글 각각에 대해 모두 분류하는 다중 분류
+          * non-mental class를 포함하여 총 9가지 class로 분류
+
+  <p align="center"><img width="423" alt="image" src="https://user-images.githubusercontent.com/65614582/210791703-3c8fdcd2-305e-4732-a1e9-6d7f48c2bccb.png">
 
 
+ ## Conclusion<br>
+ 코로나19를 기준으로 소셜미디어 상의 정신질환 게시글 트렌드 분석하고 이를 통해 정신질환 검출 모델 성능 개선함.<br>
+ 본 연구를 바탕으로 정신건강에 영향을 미칠 수 있는 사회 현상을 기준으로 정신질환 게시글의 특성을 파악하여 적합한 정신건강 검출 모델을 개발할 수 있을 것이라 생각함.
+    
+    

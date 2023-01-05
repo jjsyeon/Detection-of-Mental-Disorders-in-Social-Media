@@ -52,9 +52,22 @@
     
     <p align="center"><img width="493" alt="무제 2" src="https://user-images.githubusercontent.com/65614582/174300202-32db4a4b-7298-4a23-9606-07a2734695a2.png"><br>
 
-## Future Plan<br>
-* 확보한 감정 점수 라벨링 된 데이터셋을 활용하여 트렌드 분석
-* 정신질환 예측 모델 개발 및 위험도 지표 추출
+## Trend Analysis <br>
+* 게시글 수 분석 시기 별 비교 <br>
+    - 코로나19 게시글 수 비율이 증가하는 추세임
+    - 코로나 관련 게시글 수는 r/covid뿐만 아니라 r/mental에서도 크게 증가
+    
+  <p align="center"><img width="700" alt="image" src="https://user-images.githubusercontent.com/65614582/210776224-b45a2b95-eac4-45d0-b9d9-913b126aa192.png">
+
+
+* 감정 점수 및 주제 분석 결과 시기 별 비교<br>
+    - mid-pandemic 시기에 정신질환 게시글의 변화가 큼
+    - mid-pandemic : 패닉, 외로움, 음모에 대한 변화량이 높음
+    - post-pandemic : 건강 전반에 관련된 주제 (r/healthanxiety, r/fitness)에 대한 변화량이 높음
+    
+  <p align="center"><img width="700" alt="image" src="https://user-images.githubusercontent.com/65614582/210776590-5405762b-1c68-41af-bae3-8f60689695f7.png">
+
+## Mental Disorder Detection Model<br>
 
 
 

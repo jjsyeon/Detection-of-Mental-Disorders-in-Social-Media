@@ -59,7 +59,18 @@
 > 2. mid - pandemic (2020.1~2021.7)
 > 3. post - pandemic (2021.8~2022.3)
 <br>
-
+      
+> 추가적 데이터 수집. 정신질환관련 게시글을 추가적으로 수집하고 비교군으로 활용할 일반 게시글 및 코로나 게시글을 확보.<br>
+> 트렌드 분석에 활용한 데이터는 다음과 같으며 각 서브레딧별로 3000개 게시글을 샘플링하여 분석.<br>
+> 1. Mental Disorder<br>
+>      * depression, bipolar, panic, healthanxiety, lonely, socialanxiety, SuicideWatch, mentalhealth subreddit<br>
+> 2. Non-mental Disorder <br>
+>      * relationship, teaching, conspiracy, divorce, fitness, guns, jokes, legaladvice, meditation, personalfinance subreddit<br>
+> 3. COVID 19 <br>
+>      * covid19, covid_support subreddit <br>      
+      
+<br>
+      
 * 게시글 수 분석 시기 별 비교 <br>
     - 코로나19 게시글 수 비율이 증가하는 추세임
     - 코로나 관련 게시글 수는 r/covid뿐만 아니라 r/mental에서도 크게 증가
